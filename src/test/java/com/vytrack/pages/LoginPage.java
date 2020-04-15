@@ -1,8 +1,9 @@
 package com.vytrack.pages;
 
-import com.automation.utilities.BrowserUtils;
-import com.automation.utilities.ConfigurationReader;
-import com.automation.utilities.Driver;
+
+import com.vytrack.utilities.BrowserUtils;
+import com.vytrack.utilities.ConfigurationReader;
+import com.vytrack.utilities.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
