@@ -23,7 +23,7 @@ public class Driver {
             String browser = ConfigurationReader.getProperty("browser").toLowerCase();
             switch (browser) {
                 case "chrome":
-                    WebDriverManager.chromedriver().version("79").setup();
+                    WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver();
                     break;
                 case "firefox":
