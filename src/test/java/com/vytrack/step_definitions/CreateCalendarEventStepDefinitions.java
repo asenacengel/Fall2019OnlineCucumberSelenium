@@ -33,6 +33,7 @@ public class CreateCalendarEventStepDefinitions {
         System.out.println("User click on save and close button");
         calendarEventsPage.clickOnSaveAndClose();
     }
+
     @Then("user verifies that description of new calendar event is {string}")
     public void user_verifies_that_description_of_new_calendar_event_is(String string) {
         Assert.assertEquals(string, calendarEventsPage.getGeneralInfoDescriptionText());
@@ -42,6 +43,9 @@ public class CreateCalendarEventStepDefinitions {
     public void user_verifies_that_title_of_new_calendar_event_is(String string) {
         Assert.assertEquals(string, calendarEventsPage.getGeneralInfoTitleText());
     }
+//    And user enters new calendar event information:
+//            | description | On this meeting we discuss what went well, what went wrong and what can be improved |
+//            | title       | Sprint Retrospective                                                                |
 
     @Then("user enters new calendar event information:")
     public void user_enters_new_calendar_event_information(Map<String, String> dataTable) {
@@ -54,5 +58,6 @@ public class CreateCalendarEventStepDefinitions {
         Assert.assertEquals(dataTable.get("description"), calendarEventsPage.getGeneralInfoDescriptionText());
         Assert.assertEquals(dataTable.get("title"), calendarEventsPage.getGeneralInfoTitleText());
     }
+
 
 }
