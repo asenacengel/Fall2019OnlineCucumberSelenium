@@ -1,4 +1,3 @@
-
 @scenario_outline_2
 Feature: Login tests with Scenario Outline
 

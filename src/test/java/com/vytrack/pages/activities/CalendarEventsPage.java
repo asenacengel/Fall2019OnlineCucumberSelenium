@@ -11,7 +11,6 @@ import java.util.List;
 
 public class CalendarEventsPage extends AbstractPageBase {
 
-
     @FindBy(css = "[title='Create Calendar event']")
     private WebElement createCalendarEvent;
 

@@ -11,7 +11,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class VehiclesPage extends AbstractPageBase {
 
-
     @FindBy(partialLinkText = "Create Car")
     private WebElement createCar;
 
@@ -46,7 +45,7 @@ public class VehiclesPage extends AbstractPageBase {
 
     public void setLocationInput(String location) {
         locationInput.sendKeys(location);
-        wait.until(ExpectedConditions.attributeToBe(locationInput,"value",location));
+        wait.until(ExpectedConditions.attributeToBe(locationInput, "value", location));
     }
 
     public void setModelYear(String year) {
@@ -61,11 +60,9 @@ public class VehiclesPage extends AbstractPageBase {
         submit.click();
     }
 
-
     public void clickToCreateCar() {
         wait.until(ExpectedConditions.elementToBeClickable(createCar)).click();
         waitForLoaderMask();
-
     }
 
     public String getCarGeneralInfo(String parameter) {

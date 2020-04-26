@@ -59,5 +59,4 @@ public class CreateCalendarEventStepDefinitions {
         Assert.assertEquals(dataTable.get("title"), calendarEventsPage.getGeneralInfoTitleText());
     }
 
-
 }

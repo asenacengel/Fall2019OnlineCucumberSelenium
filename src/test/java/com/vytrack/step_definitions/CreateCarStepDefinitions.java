@@ -47,5 +47,4 @@ public class CreateCarStepDefinitions {
             Assert.assertEquals(row.get("Color"), vehiclesPage.getCarGeneralInfo("Color"));
         }
     }
-
 }
