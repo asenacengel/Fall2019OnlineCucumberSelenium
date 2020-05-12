@@ -1,4 +1,3 @@
-
 @smoke_test
 Feature: Smoke test
 

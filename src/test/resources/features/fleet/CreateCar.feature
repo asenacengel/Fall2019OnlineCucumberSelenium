@@ -1,4 +1,3 @@
-
 @create_car
 Feature: Create a car
   As user, I want to be able to add new cars

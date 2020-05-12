@@ -11,6 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class VehiclesPage extends AbstractPageBase {
 
+
     @FindBy(partialLinkText = "Create Car")
     private WebElement createCar;
 

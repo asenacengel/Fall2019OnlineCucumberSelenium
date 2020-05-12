@@ -8,6 +8,7 @@ import java.util.List;
 
 public class ViewCalendarEventsStepDefinitions {
 
+
     CalendarEventsPage calendarEventsPage = new CalendarEventsPage();
 
     @Then("View Per Page menu should have following options")

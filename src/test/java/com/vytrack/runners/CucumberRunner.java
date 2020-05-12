@@ -5,11 +5,11 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        glue = "src/test/java/com/vytrack/step_definitions",
-        features = "src/test/resources",
-        dryRun = false,
+        glue = "com/vytrack/step_definitions",
+        features = "src/test/resources/features",
+        dryRun = true,
         strict = false,
-        tags ="@view_calendar_events",
+        tags ="@create_car_ddt",
         plugin = {
                 "html:target/default-report",
                 "json:target/cucumber1.json",
@@ -18,6 +18,7 @@ import org.junit.runner.RunWith;
 
 )
 public class CucumberRunner {
+
 
 
 

@@ -9,7 +9,6 @@ import org.openqa.selenium.TakesScreenshot;
 
 public class Hooks {
 
-
     @Before(order = 2)
     public void setup() {
         System.out.println("Test setup");
@@ -38,4 +37,5 @@ public class Hooks {
         System.out.println("Test clean up");
         Driver.closeDriver();
     }
+
 }

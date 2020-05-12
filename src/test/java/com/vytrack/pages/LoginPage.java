@@ -10,6 +10,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class LoginPage extends AbstractPageBase{
 
+
     @FindBy(id = "prependedInput")
     private WebElement username;
 
