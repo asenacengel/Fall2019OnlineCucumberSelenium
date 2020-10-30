@@ -1,5 +1,6 @@
 package com.vytrack.step_definitions;
 
+import com.vytrack.utilities.ConfigurationReader;
 import com.vytrack.utilities.Driver;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -12,7 +13,8 @@ public class Hooks {
     @Before(order = 2)
     public void setup() {
         System.out.println("Test setup");
-        Driver.getDriver().manage().window().maximize();
+       // Driver.getDriver().manage().window().maximize();
+        Driver.getDriver(ConfigurationReader.getProperty("browser"));
     }
 
     @Before(value = "@driver", order = 1)
